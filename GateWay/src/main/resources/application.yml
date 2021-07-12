@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: jdbc_route
+          uri: lb://provider-jdbc
+          predicates:
+            - Path=/user/*
+
+        - id: tree_route
+          uri: lb://provider-tree
+          predicates:
+            - Path=/add/*

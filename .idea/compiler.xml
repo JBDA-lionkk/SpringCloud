@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="provider-jdbc" />
+        <module name="provider-tree" />
+        <module name="GateWay" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="GateWay" target="1.8" />
+      <module name="provider-jdbc" target="1.8" />
+      <module name="provider-jdbc (1)" target="1.8" />
+      <module name="provider-jdbc2" target="1.8" />
+      <module name="provider-tree" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="GateWay" options="-parameters" />
+      <module name="provider-jdbc" options="-parameters" />
+      <module name="provider-jdbc (1)" options="-parameters" />
+      <module name="provider-jdbc2" options="-parameters" />
+      <module name="provider-tree" options="-parameters" />
+    </option>
+  </component>
+</project>
